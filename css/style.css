@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+/* For names and states */
+p {
+  font-size: 18px;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: var(--dark-cyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.icons {
+  position: absolute;
+  width:100%;
+  height: 100%;
+  left: 0;
+  height: 0;
+}
+
+.icons svg {
+  position: absolute;
+}
+
+.icons svg:first-child {
+  left: -300px;
+  top:-800px;
+}
+
+.icons svg:last-child {
+  right: -500px;
+  bottom: -950px;
+}
+
+.container {
+  min-width: 350px;
+  box-shadow: 10px 10px 10px #0000003a ;
+}
+
+.container .header {
+  width: 100%;
+  background: url(../images/bg-pattern-card.svg);
+  height: 130px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  position: relative;
+}
+
+.container img {
+  position: absolute;
+  border-radius: 50%;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #fff;
+}
+
+.info {
+  background-color: #fff;
+  padding: 70px 0 0 0;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.info h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+h3 span {
+  color: var(--dark-grayish-blue);
+  margin-left: 5px;
+}
+
+.info p {
+  color: var(--dark-grayish-blue);
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+hr {
+  margin-bottom: 20px;
+  border: none;
+  height: 1px;
+  background-color: var(--dark-gray);
+}
+
+.numbers {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.number h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.number p {
+  color: var(--dark-gray);
+  font-size: 13px;
+}
+
+@media only screen and (max-width:400px) {
+  .container {
+    min-width:300px;
+  }
+}
